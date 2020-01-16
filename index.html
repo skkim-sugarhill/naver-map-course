@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+
+    <script type="text/javascript"
+        src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=li90go1agx"></script>
+</head>
+
+<body>
+    <div id="map" style="width:100%;height:100vh;"></div>
+
+    <script>
+        var mapOptions = {
+            useStyleMap: true,
+            center: new naver.maps.LatLng(37.3595704, 127.105399),
+            zoom: 10
+        };
+
+        var map = new naver.maps.Map('map', mapOptions);
+    </script>
+
+</body>
+
+</html>
